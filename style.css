@@ -1,0 +1,92 @@
+/* common css style */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* header style */
+#header {
+  background-color: darkblue;
+}
+#header .container {
+}
+#header .container .inner_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .container .inner_header .logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#header .container .inner_header .logo h1 {
+}
+#header .container .inner_header .logo h1 a {
+  color: #fff;
+}
+#header .container .inner_header nav {
+}
+#header .container .inner_header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .container .inner_header nav li {
+  padding: 21px;
+  position: relative;
+}
+#header .container .inner_header nav li a {
+  padding: 10px 0 10px 30px;
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 20px;
+  color: #fff;
+}
+#header .container .inner_header nav ul li a:hover {
+  color: crimson;
+}
+/* dropdown css style */
+#header .container .inner_header nav ul li {
+}
+#header .container .inner_header nav ul ul li {
+  padding: 5px 15px;
+}
+
+#header .container .inner_header nav ul ul {
+  flex-direction: column;
+  position: absolute;
+  background-color: black;
+  left: 0;
+  width: 150px;
+  top: 63px;
+  padding: 10px 0;
+}
+
+#header .container .inner_header nav ul ul li:hover {
+  background-color: rgb(235, 13, 13);
+}
