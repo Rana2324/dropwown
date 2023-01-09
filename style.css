@@ -72,20 +72,20 @@ a {
 }
 /* dropdown css style */
 
-#header .container .inner_header nav ul li:hover ul ul {
-  left: -9999px;
-}
 #header .container .inner_header nav ul ul {
   flex-direction: column;
   position: absolute;
   background-color: black;
-  left: -9999px;
   width: 150px;
   top: 50px;
+  left: -99999px;
 }
 #header .container .inner_header nav ul li:hover ul {
   left: 0px;
   top: 50px;
+}
+#header .container .inner_header nav ul li:hover ul ul {
+  left: -9999px;
 }
 
 #header .container .inner_header nav ul ul ul {
