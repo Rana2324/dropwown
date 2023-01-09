@@ -1,4 +1,5 @@
 /* common css style */
+
 *,
 ::after,
 ::before {
@@ -54,39 +55,61 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-#header .container .inner_header nav li {
-  padding: 21px;
-  position: relative;
-}
-#header .container .inner_header nav li a {
+#header .container .inner_header nav ul li {
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 500;
   white-space: nowrap;
   transition: 0.3s;
   font-size: 20px;
+  position: relative;
+}
+#header .container .inner_header nav li a {
   color: #fff;
 }
 #header .container .inner_header nav ul li a:hover {
   color: crimson;
 }
 /* dropdown css style */
-#header .container .inner_header nav ul li {
-}
-#header .container .inner_header nav ul ul li {
-  padding: 5px 15px;
-}
 
+#header .container .inner_header nav ul li:hover ul ul {
+  left: -9999px;
+}
 #header .container .inner_header nav ul ul {
   flex-direction: column;
   position: absolute;
   background-color: black;
-  left: 0;
+  left: -9999px;
   width: 150px;
-  top: 63px;
-  padding: 10px 0;
+  top: 50px;
+}
+#header .container .inner_header nav ul li:hover ul {
+  left: 0px;
+  top: 50px;
+}
+
+#header .container .inner_header nav ul ul ul {
+  left: -9999px;
+  top: 0px;
+}
+
+#header .container .inner_header nav ul li:hover ul {
+  left: 0;
+}
+#header .container .inner_header nav ul ul li:hover ul {
+  left: 150px;
+  top: 0px;
+}
+#header .container .inner_header nav ul ul li {
+  padding: 5px 15px;
+  width: 100%;
+  display: block;
 }
 
 #header .container .inner_header nav ul ul li:hover {
   background-color: rgb(235, 13, 13);
+  color: aliceblue;
+}
+#header .container .inner_header nav ul ul li:hover a {
+  color: aliceblue;
 }
